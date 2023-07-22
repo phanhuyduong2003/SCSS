@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Crimson Text', serif;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.5;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.link-hover {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.link-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+.link-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.container {
+    margin: auto;
+    & > * {
+        margin-top: 100px;
+    }
+    // @include mq_min_576 {
+    //     max-width: 540px;
+    // }
+    @include mq_min_768 {
+        max-width: 720px;
+    }
+    @include mq_min_1024 {
+        max-width: 960px;
+    }
+    @include mq_min_1200 {
+        max-width: 1360px;
+    }
+}
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.8s ease-in-out;
+        object-fit: cover;
+    }
+    &:hover {
+        .image-product {
+            cursor: pointer;
+            transform: scale(1.2);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // transition: all 0.5s linear;
+        }
+    }
+}
+.price {
+    font-size: 17px;
+}
+.name {
+    font-weight: 500;
+    font-size: 21px;
+    word-wrap: break-word;
+    // word-break: break-all;
+    cursor: pointer;
+}
+.buy {
+    // background-color: black;
+    text-align: center;
+    width: 100%;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    font-size: 17px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+h2.title {
+    font-size: 28px;
+    font-family: 'DM Sans', sans-serif;
+}
+.icon-control {
+    font-size: 13px;
+}
+// .d-flex {
+//     display: flex;
+// }
+// .justify-content-center {
+//     justify-content: center;
+// }
+// .justify-content-between {
+//     justify-content: space-between;
+// }
+// .justify-content-around {
+//     justify-content: space-around;
+// }
+// .justify-content-start {
+//     justify-content: space-start;
+// }
+// .justify-content-end {
+//     justify-content: space-end;
+// }
+// .align-items-center {
+//     align-items: center;
+// }
+// .flex-column {
+//     flex-direction: column;
+// }
+// .flex-row {
+//     flex-direction: row;
+// }
+// .nowrap {
+//     flex-wrap: nowrap;
+// }
