@@ -423,6 +423,7 @@ scroll */
   }
 }
 .header-main .header .header-actions input {
+  width: 100%;
   border: none;
   outline: none;
 }
@@ -547,16 +548,35 @@ scroll */
     height: 220px;
   }
   .menu .menu-main .menu-link .categories .sub-menu .menu-promotion .background-promotion .content-promotion {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .menu .menu-main .menu-link .categories .sub-menu .menu-promotion .background-promotion .content-promotion > * {
+    margin-bottom: 12px;
+  }
+  .menu .menu-main .menu-link .categories .sub-menu .menu-promotion .background-promotion .content-promotion .title {
+    font-size: 25px;
+  }
+  .menu .menu-main .menu-link .categories .sub-menu .menu-promotion .background-promotion .content-promotion .sub-title {
+    font-size: 15px;
+    font-weight: 500;
   }
   .menu .menu-main .menu-link .categories .sub-menu .menu-promotion .background-promotion .content-promotion .explore {
     padding: 11px 36px;
     background-color: black;
     color: white;
     border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .menu .menu-main .menu-link .categories .sub-menu .menu-promotion .background-promotion .content-promotion .explore:hover {
+    background-color: white;
+    color: black;
   }
   .menu .menu-main .menu-link .categories .sub-menu .menu-promotion .background-promotion img {
     width: 100%;
@@ -1010,7 +1030,7 @@ scroll */
 }
 @media screen and (min-width: 768px) {
   .content .fresh-food .content__fresh-food .background {
-    width: 40%;
+    width: 60%;
   }
 }
 .content .fresh-food .content__fresh-food .background .background-image {
@@ -1036,12 +1056,17 @@ scroll */
 }
 @media screen and (min-width: 768px) {
   .content .fresh-food .content__fresh-food .fresh-food__slide {
-    width: 60%;
+    width: 70%;
     position: absolute;
     top: 50%;
     right: 0;
     padding: 25px 15px;
     transform: translate(0, -50%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content .fresh-food .content__fresh-food .fresh-food__slide {
+    width: 50%;
   }
 }
 .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide {
@@ -1060,11 +1085,12 @@ scroll */
   object-fit: cover;
 }
 .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide .card-food {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 380px;
+  min-height: 400px;
   background-color: white;
   border-radius: 12px;
   padding: 5px;
@@ -1111,6 +1137,16 @@ scroll */
   text-decoration: line-through;
   opacity: 0.54;
 }
+.content .fresh-food .content__fresh-food .fresh-food__slide .card-slide .card-food .label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 2px 7px;
+  background-color: #d14545;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+}
 .content .fresh-food .content__fresh-food .fresh-food__slide .button-slide__card-slide {
   display: flex;
   justify-content: center;
@@ -1147,7 +1183,7 @@ scroll */
   justify-content: center;
   align-items: center;
   background-color: #f4ede1;
-  border-radius: 30px;
+  border-radius: 12px;
   width: 100%;
   height: 100%;
 }
@@ -1173,10 +1209,10 @@ scroll */
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 50px;
+  padding: 35px;
 }
-.content .hot-deals .content__hot-deals .card-deals .card-content:not(:last-child) {
-  margin-bottom: 12px;
+.content .hot-deals .content__hot-deals .card-deals .card-content > * {
+  margin-bottom: 12px !important;
 }
 .content .hot-deals .content__hot-deals .card-deals .card-content .title {
   margin: 0;
@@ -1247,8 +1283,11 @@ scroll */
   border-radius: 12px;
 }
 .content .shop-category .categories-slider .card-category .card-image {
-  padding: 0;
   overflow: hidden;
+}
+.content .shop-category .categories-slider .card-category .card-image .image-product {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .content .shop-category .categories-slider .card-category .card-content {
   padding: 15px;
