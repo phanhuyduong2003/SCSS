@@ -11,6 +11,16 @@
     flex-wrap: $wrap;
 }
 
+@mixin mq_min_200 {
+    @media screen and (min-width: 200px) {
+        @content;
+    }
+}
+@mixin mq_min_480 {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
 @mixin mq_min_576 {
     @media screen and (min-width: 576px) {
         @content;

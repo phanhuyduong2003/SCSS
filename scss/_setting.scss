@@ -21,37 +21,62 @@ a {
     text-decoration: none;
     color: black;
 }
-
 .link-hover {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    color: black;
+    // display: inline;
+    // position: relative;
+    // text-decoration: none;
+    // color: black;
+    // word-wrap: break-word;
+    // word-break: keep-all;
+    // width: calc(100%);
+    background-image: linear-gradient(to right, black, black);
+    background-position: left calc(1em + 2px);
+    background-repeat: no-repeat;
+    display: inline;
+    padding-bottom: 3px;
+    transition: all 100ms linear;
+    background-size: 0% 2px;
+    &:hover {
+        background-image: linear-gradient(to right, black, black);
+        background-position: left calc(1em + 2px);
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        display: inline;
+        padding-bottom: 3px;
+        transition: all 100ms linear;
+    }
 }
-.link-hover::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scale(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom left;
-    transition: transform 0.25s ease-out;
-}
-.link-hover:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
+// .link-hover::after {
+//     content: '';
+//     position: absolute;
+//     width: calc(100%);
+//     transform: scale(0);
+//     height: 1px;
+//     bottom: 0;
+//     left: 0;
+//     background-color: black;
+//     transform-origin: bottom left;
+//     transition: transform 0.25s ease-out;
+// }
+// .link-hover:hover::after {
+//     transform: scaleX(1);
+//     transform-origin: bottom left;
+// }
 .container {
-    margin: auto;
+    margin: 0 auto;
     & > * {
         margin-top: 100px;
     }
-    // @include mq_min_576 {
-    //     max-width: 540px;
+
+    @include mq_min_200 {
+        max-width: 340px;
+    }
+    // @include mq_min_480 {
+    //     max-width: 460px;
     // }
+    @include mq_min_576 {
+        max-width: 540px;
+    }
     @include mq_min_768 {
         max-width: 720px;
     }
@@ -59,7 +84,7 @@ a {
         max-width: 960px;
     }
     @include mq_min_1200 {
-        max-width: 1360px;
+        max-width: 1170px;
     }
 }
 .card-image {
@@ -119,6 +144,16 @@ h2.title {
 }
 .icon-control {
     font-size: 13px;
+}
+
+.slick-disabled {
+    cursor: default;
+    opacity: 0.54;
+}
+.slick-dots {
+    display: flex !important;
+    align-items: center !important;
+    position: unset !important;
 }
 // .d-flex {
 //     display: flex;

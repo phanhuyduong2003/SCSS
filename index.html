@@ -21,6 +21,10 @@
             rel="stylesheet"
             href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+        />
         <link rel="stylesheet" href="./styles/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,62 +32,8 @@
             href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=DM+Sans:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script> -->
-
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
-            integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-            integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-            integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-            integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
-            integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
@@ -91,6 +41,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <script src="./js/main.js"></script>
     </head>
     <body>
         <header>
@@ -226,76 +177,78 @@
                 <div class="menu-main">
                     <ul class="menu-link">
                         <li class="categories">
-                            <a href="">Categories<i class="fi fi-rr-angle-small-down"></i></a>
+                            <a href="" class="menu-link__item link-hover"
+                                >Categories<i class="fi fi-rr-angle-small-down"></i
+                            ></a>
                             <div class="sub-menu">
                                 <ul class="list-categories">
                                     <li class="categories-product">
-                                        <a href="#" class="product">Pantry</a>
+                                        <a href="#" class="product link-hover">Pantry</a>
                                         <div class="product-link">
                                             <ul>
-                                                <li><a href="">All</a></li>
+                                                <li><a href="" class="link-hover">All</a></li>
                                                 <li>
-                                                    <a href="">Pasta & Noodles</a>
+                                                    <a href="" class="link-hover">Pasta & Noodles</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Grains & Beans</a>
+                                                    <a href="" class="link-hover">Grains & Beans</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Snacks</a>
+                                                    <a href="" class="link-hover">Snacks</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Oil, Vinegear & Spices</a>
+                                                    <a href="" class="link-hover">Oil, Vinegear & Spices</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Sauces</a>
+                                                    <a href="" class="link-hover">Sauces</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Dressings</a>
+                                                    <a href="" class="link-hover">Dressings</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </li>
                                     <div class="d-flex flex-column justify-content-between">
                                         <li class="categories-product">
-                                            <a href="#" class="product">Produce</a>
+                                            <a href="#" class="product link-hover">Produce</a>
                                             <div class="product-link">
                                                 <ul>
                                                     <li>
-                                                        <a href="">All</a>
+                                                        <a href="" class="link-hover">All</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Vegetable</a>
+                                                        <a href="" class="link-hover">Vegetable</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Meat</a>
+                                                        <a href="" class="link-hover">Meat</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Herbs & Aromatics</a>
+                                                        <a href="" class="link-hover">Herbs & Aromatics</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li class="categories-product">
-                                            <a href="#" class="product">Dairy & Eggs</a>
+                                            <a href="#" class="product link-hover">Dairy & Eggs</a>
                                             <div class="product-link">
                                                 <ul>
                                                     <li>
-                                                        <a href="">All</a>
+                                                        <a href="" class="link-hover">All</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Milk & Cream</a>
+                                                        <a href="" class="link-hover">Milk & Cream</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Eggs & Buuter</a>
+                                                        <a href="" class="link-hover">Eggs & Buuter</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Cheese</a>
+                                                        <a href="" class="link-hover">Cheese</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Yogurts & Cultured Dairy</a>
+                                                        <a href="" class="link-hover">Yogurts & Cultured Dairy</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Plant-Bases</a>
+                                                        <a href="" class="link-hover">Plant-Bases</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -303,42 +256,42 @@
                                     </div>
                                     <div class="d-flex flex-column">
                                         <li class="categories-product">
-                                            <a href="#" class="product">Bakery</a>
+                                            <a href="#" class="product link-hover">Bakery</a>
                                             <div class="product-link">
                                                 <ul>
                                                     <li>
-                                                        <a href="">All</a>
+                                                        <a href="" class="link-hover">All</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Bread</a>
+                                                        <a href="" class="link-hover">Bread</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Buns & Rolls</a>
+                                                        <a href="" class="link-hover">Buns & Rolls</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Bagels & Breakfast</a>
+                                                        <a href="" class="link-hover">Bagels & Breakfast</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Gluten-Free</a>
+                                                        <a href="" class="link-hover">Gluten-Free</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li class="categories-product">
-                                            <a href="#" class="product">Drinks</a>
+                                            <a href="#" class="product link-hover">Drinks</a>
                                             <div class="product-link">
                                                 <ul>
                                                     <li>
-                                                        <a href="">All</a>
+                                                        <a href="" class="link-hover">All</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Coffee</a>
+                                                        <a href="" class="link-hover">Coffee</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Tea & Elixirs</a>
+                                                        <a href="" class="link-hover">Tea & Elixirs</a>
                                                     </li>
                                                     <li>
-                                                        <a href="">Juices</a>
+                                                        <a href="" class="link-hover">Juices</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -356,18 +309,18 @@
                                         <div class="content-promotion">
                                             <span class="title">Fresh & Energetic</span>
                                             <span>Healthy & Organic</span>
-                                            <a href="#" class="explore">Learn More</a>
+                                            <span><a href="#" class="explore">Learn More</a></span>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- </div> -->
                             </div>
                         </li>
-                        <li><a href="#" class="link-hover">About us</a></li>
-                        <li><a href="#" class="link-hover">Our stores</a></li>
-                        <li><a href="#" class="link-hover">Recipes</a></li>
-                        <li><a href="#" class="link-hover">Blog</a></li>
-                        <li><a href="#" class="link-hover">FAQ</a></li>
+                        <li><a href="#" class="menu-link__item link-hover">About us</a></li>
+                        <li><a href="#" class="menu-link__item link-hover">Our stores</a></li>
+                        <li><a href="#" class="menu-link__item link-hover">Recipes</a></li>
+                        <li><a href="#" class="menu-link__item link-hover">Blog</a></li>
+                        <li><a href="#" class="menu-link__item link-hover">FAQ</a></li>
                     </ul>
                     <div class="menu-actions">
                         <div class="pickup-store d-flex align-items-center justify-content-around">
@@ -392,11 +345,9 @@
             <!-- </div> -->
         </header>
         <div class="main">
-            <section class="content">
+            <section class="content container">
                 <div class="slider slick-slider">
-                    <!-- <button class="slick-prev slick-arrow"><i class="fi fi-ts-angle-small-left"></i></button>
-                    <button class="slick-next slick-arrow"><i class="fi fi-ts-angle-small-right"></i></button> -->
-                    <div class="slide-item">
+                    <div class="slide-item slick-slide">
                         <img
                             src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/HERO_main_1_bb5a1d51-e731-4132-8c2d-24f909f05736.jpg?v=1655970492&width=1080"
                             alt=""
@@ -408,7 +359,7 @@
                             <a href="" class="explore">SHOP NOW</a>
                         </div>
                     </div>
-                    <div class="slide-item">
+                    <div class="slide-item slick-slide">
                         <img
                             src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/HERO_main_2_6e4d8f5b-69d4-41fa-9abd-234c6dfa6756.jpg?v=1655970512&width=840"
                             alt=""
@@ -422,17 +373,17 @@
                     </div>
                 </div>
                 <div class="button-slide__slider">
-                    <button class="slick-prev__slider">
+                    <button class="slick-prev__slider slick-disabled">
                         <i class="fi fi-ts-angle-small-left icon-control"></i>
                     </button>
                     <div class="dots__slider"></div>
-                    <button class="slick-next__slider">
+                    <button class="slick-next__slider slick-disabled">
                         <i class="fi fi-ts-angle-small-right icon-control"></i>
                     </button>
                 </div>
                 <div class="container">
                     <div class="best-seller">
-                        <div class="title d-flex justify-content-between">
+                        <div class="title-container">
                             <h2 class="title">Best Sellers</h2>
                             <a href="">View all products</a>
                         </div>
@@ -449,8 +400,17 @@
                                     <div class="card-content">
                                         <div class="price">$9.00</div>
                                         <div class="name link-hover">Chocolate Cookie</div>
-                                        <div class="review"></div>
-                                        <div class="note">No added sugar!</div>
+                                        <div class="rating">
+                                            <div class="star-rating">
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                            </div>
+                                            <span class="number-rating">(4)</span>
+                                        </div>
+                                        <div class="note"><span>No added sugar!</span></div>
                                         <button class="buy">Buy now</button>
                                         <p>Choose store</p>
                                         <div class="list-icon">
@@ -458,13 +418,18 @@
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Gluten-free_3dfe337a-e8e6-4535-a988-e237511cca0d.png?crop=center&height=32&v=1655374031&width=32"
                                                 alt="Gluten-free"
                                                 title="Gluten-free"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Eggs.png?crop=center&height=32&v=1655368519&width=32"
                                                 alt="Eggs"
                                                 title="Eggs"
+                                                class="ingredient"
                                             />
                                         </div>
+                                    </div>
+                                    <div class="label">
+                                        <span class="label-new">NEW</span>
                                     </div>
                                 </div>
                                 <div class="card-item">
@@ -481,8 +446,17 @@
                                             <div class="old-price">$6.00</div>
                                         </div>
                                         <div class="name link-hover">Keto Crunch</div>
-                                        <div class="review"></div>
-                                        <div class="note">Keto-friendly combination</div>
+                                        <div class="rating">
+                                            <div class="star-rating">
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                            </div>
+                                            <span class="number-rating">(4)</span>
+                                        </div>
+                                        <div class="note"><span>Keto-friendly combination</span></div>
                                         <button class="buy">Buy now</button>
                                         <p>Choose store</p>
                                         <div class="list-icon">
@@ -490,28 +464,36 @@
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Corn.png?crop=center&height=32&v=1660649013&width=32"
                                                 alt="Corn"
                                                 title="Corn"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Gluten_0cd5b727-d9fe-4595-953b-44d39dba88ee.png?crop=center&height=32&v=1660649125&width=32"
                                                 alt="Gluten"
                                                 title="Gluten"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Nuts.png?crop=center&height=32&v=1660649060&width=32"
                                                 alt="Nuts"
                                                 title="Nuts"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Peanuts.png?crop=center&height=32&v=1660649081&width=32"
                                                 alt="Peanuts"
                                                 title="Peanuts"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Celery_4187368e-801a-492b-b78b-fc78ff14577f.png?crop=center&height=32&v=1660649172&width=32"
                                                 alt="Celery"
                                                 title="Celery"
+                                                class="ingredient"
                                             />
                                         </div>
+                                    </div>
+                                    <div class="label">
+                                        <span class="label-sale">-17%</span>
                                     </div>
                                 </div>
                                 <div class="card-item">
@@ -525,8 +507,17 @@
                                     <div class="card-content">
                                         <div class="price">$0.99</div>
                                         <div class="name link-hover">Watermelon</div>
-                                        <div class="review"></div>
-                                        <div class="note">Excellent source of Vitamin A</div>
+                                        <div class="rating">
+                                            <div class="star-rating">
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                            </div>
+                                            <span class="number-rating">(4)</span>
+                                        </div>
+                                        <div class="note"><span>Excellent source of Vitamin A</span></div>
                                         <button class="buy">Buy now</button>
                                         <p>Choose store</p>
                                         <div></div>
@@ -543,8 +534,17 @@
                                     <div class="card-content">
                                         <div class="price">From $2.00</div>
                                         <div class="name link-hover">Power Breakfast</div>
-                                        <div class="review"></div>
-                                        <div class="note">Protein bomb!</div>
+                                        <div class="rating">
+                                            <div class="star-rating">
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                            </div>
+                                            <span class="number-rating">(4)</span>
+                                        </div>
+                                        <div class="note"><span>Protein bomb!</span></div>
                                         <button class="buy">Buy now</button>
                                         <p>Choose store</p>
                                         <div class="list-icon">
@@ -552,16 +552,19 @@
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Gluten-free_3dfe337a-e8e6-4535-a988-e237511cca0d.png?crop=center&height=32&v=1655374031&width=32"
                                                 alt="Gluten-free"
                                                 title="Gluten-free"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Soya-free_28429413-b9fa-41da-bb09-53785688b1e0.png?crop=center&height=32&v=1655796596&width=32"
                                                 alt="Soya-free"
                                                 title="Soya-free"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Organic_7e1deabb-4002-4a38-aedc-4f5febec3a72.png?crop=center&height=32&v=1655795934&width=32"
                                                 alt="Organic"
                                                 title="Organic"
+                                                class="ingredient"
                                             />
                                         </div>
                                     </div>
@@ -577,8 +580,17 @@
                                     <div class="card-content">
                                         <div class="price">$3.00</div>
                                         <div class="name link-hover">Coconut Water</div>
-                                        <div class="review"></div>
-                                        <div class="note">Rich taste!</div>
+                                        <div class="rating">
+                                            <div class="star-rating">
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                            </div>
+                                            <span class="number-rating">(4)</span>
+                                        </div>
+                                        <div class="note"><span>Rich taste!</span></div>
                                         <button class="buy">Buy now</button>
                                         <p>Choose store</p>
                                         <div class="list-icon">
@@ -586,13 +598,18 @@
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Gluten-free_38eb0cc3-ecfe-4bf1-b3a3-e0ca63cca2a7.png?crop=center&height=32&v=1654249417&width=32"
                                                 alt="Gluten-free"
                                                 title="Gluten-free"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Eco_f7523587-bd10-46a8-9311-a125db925258.png?crop=center&height=32&v=1654250639&width=32"
                                                 alt="Ecologic"
                                                 title="Ecologic"
+                                                class="ingredient"
                                             />
                                         </div>
+                                    </div>
+                                    <div class="label">
+                                        <span class="label-new">NEW</span>
                                     </div>
                                 </div>
                                 <div class="card-item">
@@ -609,8 +626,17 @@
                                             <div class="old-price">$6.00</div>
                                         </div>
                                         <div class="name link-hover">Pomegranate</div>
-                                        <div class="review"></div>
-                                        <div class="note">High contents of polyphenols</div>
+                                        <div class="rating">
+                                            <div class="star-rating">
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                            </div>
+                                            <span class="number-rating">(4)</span>
+                                        </div>
+                                        <div class="note"><span>High contents of polyphenols</span></div>
                                         <button class="buy">Buy now</button>
                                         <p>Choose store</p>
                                         <div class="list-icon">
@@ -618,13 +644,18 @@
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Organic_7e1deabb-4002-4a38-aedc-4f5febec3a72.png?crop=center&height=32&v=1655795934&width=32"
                                                 alt="Organic"
                                                 title="Organic"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/apple-1069_1662a7dc-9d78-40f0-ad21-0d60d427a65d.png?crop=center&height=32&v=1656493437&width=32"
                                                 alt="Sustainable farm"
                                                 title="Sustainable farm"
+                                                class="ingredient"
                                             />
                                         </div>
+                                    </div>
+                                    <div class="label">
+                                        <span class="label-sale">-29%</span>
                                     </div>
                                 </div>
                                 <div class="card-item">
@@ -638,8 +669,17 @@
                                     <div class="card-content">
                                         <div class="price">$2.50</div>
                                         <div class="name link-hover">Sourdough Perth</div>
-                                        <div class="review"></div>
-                                        <div class="note">100% rye flour</div>
+                                        <div class="rating">
+                                            <div class="star-rating">
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                            </div>
+                                            <span class="number-rating">(4)</span>
+                                        </div>
+                                        <div class="note"><span>100% rye flour</span></div>
                                         <button class="buy">Buy now</button>
                                         <p>Choose store</p>
                                         <div class="list-icon">
@@ -647,13 +687,18 @@
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Gluten.png?crop=center&height=32&v=1655368537&width=32"
                                                 alt="Gluten"
                                                 title="Gluten"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Eggs.png?crop=center&height=32&v=1655368519&width=32"
                                                 alt="Eggs"
                                                 title="Eggs"
+                                                class="ingredient"
                                             />
                                         </div>
+                                    </div>
+                                    <div class="label">
+                                        <span class="label-new">NEW</span>
                                     </div>
                                 </div>
                                 <div class="card-item">
@@ -667,8 +712,17 @@
                                     <div class="card-content">
                                         <div class="price">From $5.00</div>
                                         <div class="name link-hover">BBQ Sauce</div>
-                                        <div class="review"></div>
-                                        <div class="note">Fat free, sweet and tangy</div>
+                                        <div class="rating">
+                                            <div class="star-rating">
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                                <i class="fi fi-ss-star icon-star"></i>
+                                            </div>
+                                            <span class="number-rating">(4)</span>
+                                        </div>
+                                        <div class="note"><span>Fat free, sweet and tangy</span></div>
                                         <button class="buy">Buy now</button>
                                         <p>Choose store</p>
                                         <div class="list-icon">
@@ -676,16 +730,19 @@
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/Gluten-free_3dfe337a-e8e6-4535-a988-e237511cca0d.png?crop=center&height=32&v=1655374031&width=32"
                                                 alt="Gluten-free"
                                                 title="Gluten-free"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/eggs-free.png?crop=center&height=32&v=1654693369&width=32"
                                                 alt="Eggs"
                                                 title="Eggs"
+                                                class="ingredient"
                                             />
                                             <img
                                                 src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/milk-free.png?crop=center&height=32&v=1654693369&width=32"
                                                 alt="Milk free"
                                                 title="Milk free"
+                                                class="ingredient"
                                             />
                                         </div>
                                     </div>
@@ -695,7 +752,7 @@
                                 <button class="button-prev__list-card">
                                     <i class="fi fi-ts-angle-small-left icon-control"></i>
                                 </button>
-                                <div class="dots"></div>
+                                <div class="dots__list-card"></div>
                                 <button class="button-next__list-card">
                                     <i class="fi fi-ts-angle-small-right icon-control"></i>
                                 </button>
@@ -704,7 +761,7 @@
                     </div>
                     <div class="fresh-food">
                         <h2 class="title">Shop Fresh Food</h2>
-                        <div class="content">
+                        <div class="content__fresh-food">
                             <div class="background">
                                 <img
                                     src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/fresh_food_5ed4c2ea-d46c-4d9d-9e25-6cd9a62119d5.jpg?v=1655966780&width=840"
@@ -712,8 +769,8 @@
                                     class="background-image"
                                 />
                             </div>
-                            <div class="slide-container">
-                                <!-- <div class="card-slide">
+                            <div class="fresh-food__slide">
+                                <div class="card-slide">
                                     <div class="card-food">
                                         <div class="card-image">
                                             <img
@@ -725,107 +782,91 @@
                                         <div class="card-content">
                                             <div class="price">From $6.00</div>
                                             <div class="name link-hover">Neapolitan Pizza</div>
-                                            <div class="review"></div>
+                                            <div class="rating"></div>
                                             <div class="buy">Buy now</div>
                                         </div>
                                     </div>
                                     <div class="card-food">
                                         <div class="card-image">
                                             <img
-                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/48-a.jpg?crop=center&height=396&v=1655797897&width=360"
+                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/45-a.jpg?crop=center&height=396&v=1655796227&width=360"
                                                 alt=""
                                                 class="image-product"
                                             />
                                         </div>
                                         <div class="card-content">
                                             <div class="price">From $6.00</div>
-                                            <div class="name link-hover">Noodle Salad</div>
-                                            <div class="review"></div>
+                                            <div class="name link-hover">Neapolitan Pizza</div>
+                                            <div class="rating"></div>
                                             <div class="buy">Buy now</div>
                                         </div>
                                     </div>
                                     <div class="card-food">
                                         <div class="card-image">
                                             <img
-                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/43-a.jpg?crop=center&height=396&v=1655710682&width=360"
-                                                alt=""
-                                                class="image-product"
-                                            />
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="has-sale">
-                                                <div class="new-price">$3.50</div>
-                                                <div class="old-price">$4.20</div>
-                                            </div>
-                                            <div class="name link-hover">Mega Sandwich</div>
-                                            <div class="review"></div>
-                                            <div class="buy">Buy now</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-food">
-                                        <div class="card-image">
-                                            <img
-                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/46-a.jpg?crop=center&height=396&v=1655796848&width=360"
+                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/45-a.jpg?crop=center&height=396&v=1655796227&width=360"
                                                 alt=""
                                                 class="image-product"
                                             />
                                         </div>
                                         <div class="card-content">
                                             <div class="price">From $6.00</div>
-                                            <div class="name link-hover">Greek Salad</div>
-                                            <div class="review"></div>
+                                            <div class="name link-hover">Neapolitan Pizza</div>
+                                            <div class="rating"></div>
                                             <div class="buy">Buy now</div>
                                         </div>
                                     </div>
                                     <div class="card-food">
                                         <div class="card-image">
                                             <img
-                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/44-a.jpg?crop=center&height=396&v=1655795707&width=360"
+                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/45-a.jpg?crop=center&height=396&v=1655796227&width=360"
                                                 alt=""
                                                 class="image-product"
                                             />
                                         </div>
                                         <div class="card-content">
-                                            <div class="price">On Sale from $3.50</div>
-                                            <div class="name link-hover">Hamburger</div>
-                                            <div class="review"></div>
+                                            <div class="price">From $6.00</div>
+                                            <div class="name link-hover">Neapolitan Pizza</div>
+                                            <div class="rating"></div>
                                             <div class="buy">Buy now</div>
                                         </div>
                                     </div>
                                     <div class="card-food">
                                         <div class="card-image">
                                             <img
-                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/47-a.jpg?crop=center&height=396&v=1655797591&width=360"
+                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/45-a.jpg?crop=center&height=396&v=1655796227&width=360"
                                                 alt=""
                                                 class="image-product"
                                             />
                                         </div>
                                         <div class="card-content">
-                                            <div class="price">From $2.00</div>
-                                            <div class="name link-hover">Power Breakfast</div>
-                                            <div class="review"></div>
+                                            <div class="price">From $6.00</div>
+                                            <div class="name link-hover">Neapolitan Pizza</div>
+                                            <div class="rating"></div>
                                             <div class="buy">Buy now</div>
                                         </div>
                                     </div>
-                                </div> -->
-                                <div class="card-slide">
-                                    <img
-                                        src="https://randomwordgenerator.com/img/picture-generator/chair-1840011_640.jpg"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="https://lh3.googleusercontent.com/hwau7OVWx96XaME5KpRuJ0I_MscrerK6SbRH1UwYHYaxIDQQtn7RZK02LDSfBzCreidFgDsJeXyqDct6EZiH6vsV=w640-h400-e365-rj-sc0x00ffffff"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="https://thechive.com/wp-content/uploads/2019/12/person-hilariously-photoshops-animals-onto-random-things-xx-photos-25.jpg?attachment_cache_bust=3136487&quality=85&strip=info&w=400"
-                                        alt=""
-                                    />
+                                    <div class="card-food">
+                                        <div class="card-image">
+                                            <img
+                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/45-a.jpg?crop=center&height=396&v=1655796227&width=360"
+                                                alt=""
+                                                class="image-product"
+                                            />
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="price">From $6.00</div>
+                                            <div class="name link-hover">Neapolitan Pizza</div>
+                                            <div class="rating"></div>
+                                            <div class="buy">Buy now</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="button-slide__card-slide">
                                     <button class="button-prev__card-slide">
                                         <i class="fi fi-ts-angle-small-left icon-control"></i>
                                     </button>
+                                    <div class="dots__card-slide"></div>
                                     <button class="button-next__card-slide">
                                         <i class="fi fi-ts-angle-small-right icon-control"></i>
                                     </button>
@@ -835,7 +876,7 @@
                     </div>
                     <div class="hot-deals">
                         <h2 class="title">Hot Deals</h2>
-                        <div class="content">
+                        <div class="content__hot-deals">
                             <div class="card-deals card-1">
                                 <div class="card-image">
                                     <img
@@ -884,7 +925,7 @@
                         <div class="title">
                             <h2 class="main-title">Shop by Category</h2>
                             <div class="link-title">
-                                <a href="">View all collections</a>
+                                <a href="" class="line-bottom">View all collections</a>
                             </div>
                         </div>
                         <div class="categories-slider">
@@ -896,7 +937,9 @@
                                         class="image-product"
                                     />
                                 </div>
-                                <div class="card-content">Fresh Meals & Pizzas</div>
+                                <div class="card-content">
+                                    <span class="link-hover">Fresh Meals & Pizzas</span>
+                                </div>
                             </a>
                             <a href="" class="card-category">
                                 <div class="card-image">
@@ -906,7 +949,7 @@
                                         class="image-product"
                                     />
                                 </div>
-                                <div class="card-content">Bread & Bakery</div>
+                                <div class="card-content"><span class="link-hover">Bread & Bakery</span></div>
                             </a>
                             <a href="" class="card-category">
                                 <div class="card-image">
@@ -916,7 +959,9 @@
                                         class="image-product"
                                     />
                                 </div>
-                                <div class="card-content">Flour & Baking Essentials</div>
+                                <div class="card-content">
+                                    <span class="link-hover">Flour & Baking Essentials</span>
+                                </div>
                             </a>
                             <a href="" class="card-category">
                                 <div class="card-image">
@@ -926,7 +971,7 @@
                                         class="image-product"
                                     />
                                 </div>
-                                <div class="card-content">Fruits & Vegetables</div>
+                                <div class="card-content"><span class="link-hover">Fruits & Vegetables</span></div>
                             </a>
                             <a href="" class="card-category">
                                 <div class="card-image">
@@ -936,7 +981,7 @@
                                         class="image-product"
                                     />
                                 </div>
-                                <div class="card-content">Fresh Meat</div>
+                                <div class="card-content"><span class="link-hover">Fresh Meat</span></div>
                             </a>
                             <a href="" class="card-category">
                                 <div class="card-image">
@@ -946,8 +991,37 @@
                                         class="image-product"
                                     />
                                 </div>
-                                <div class="card-content">Dairy & Eggs</div>
+                                <div class="card-content"><span class="link-hover">Dairy & Eggs</span></div>
                             </a>
+                            <a href="" class="card-category">
+                                <div class="card-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/cat9.jpg?crop=center&height=240&v=1654171331&width=240"
+                                        alt=""
+                                        class="image-product"
+                                    />
+                                </div>
+                                <div class="card-content"><span class="link-hover">Baverages</span></div>
+                            </a>
+                            <a href="" class="card-category">
+                                <div class="card-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/cat10.jpg?crop=center&height=240&v=1654171514&width=240"
+                                        alt=""
+                                        class="image-product"
+                                    />
+                                </div>
+                                <div class="card-content"><span class="link-hover">Sauces & Marinades</span></div>
+                            </a>
+                        </div>
+                        <div class="button-slide__categories-slider">
+                            <button class="button-prev__categories-slider">
+                                <i class="fi fi-ts-angle-small-left icon-control"></i>
+                            </button>
+                            <div class="dots__categories-slider"></div>
+                            <button class="button-next__categories-slider">
+                                <i class="fi fi-ts-angle-small-right icon-control"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -979,7 +1053,7 @@
                                     />
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="type"><a href="">Vegan</a></h3>
+                                    <h3 class="type"><a href="" class="link-hover">Vegan</a></h3>
                                     <p class="describe">Plant based goodness</p>
                                 </div>
                             </div>
@@ -993,7 +1067,7 @@
                                 </div>
                                 <div class="card-content">
                                     <h3 class="type">
-                                        <a href="">Gluten-Free</a>
+                                        <a href="" class="link-hover">Gluten-Free</a>
                                     </h3>
                                     <p class="describe">Only whole foods that don't contain gluten</p>
                                 </div>
@@ -1007,7 +1081,7 @@
                                     />
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="type"><a href="">Paleo</a></h3>
+                                    <h3 class="type"><a href="" class="link-hover">Paleo</a></h3>
                                     <p class="describe">Ancient ingredients, modern flavors</p>
                                 </div>
                             </div>
@@ -1020,27 +1094,49 @@
                                     />
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="type"><a href="">Keto</a></h3>
+                                    <h3 class="type"><a href="" class="link-hover">Keto</a></h3>
                                     <p class="describe">Good fats served in flavor-forward foods</p>
                                 </div>
                             </div>
+                            <div class="card-lifestyle">
+                                <div class="card-image card-5">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/wheat-1092_57864e9e-321e-4334-ae67-5660d953f941.png?crop=center&height=128&v=1655107306&width=128"
+                                        alt=""
+                                        class="image-lifestyle"
+                                    />
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="type"><a href="" class="link-hover">Plant-Based</a></h3>
+                                    <p class="describe">Introducing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-slide__lifestyle-slider">
+                            <button class="button-prev__lifestyle-slider">
+                                <i class="fi fi-ts-angle-small-left icon-control"></i>
+                            </button>
+                            <div class="dots__lifestyle-slider"></div>
+                            <button class="button-next__lifestyle-slider">
+                                <i class="fi fi-ts-angle-small-right icon-control"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="banner-promotion">
                         <div class="bakery-banner">
+                            <div class="content">
+                                <span class="property">Whole grain </span>
+                                <h3 class="product-name">
+                                    <a href="" class="link-hover">Bakery</a>
+                                </h3>
+                                <span class="limit">Limited Availability </span>
+                            </div>
                             <div class="background-image">
                                 <img
                                     src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/image-with-text_2_78a9c08d-7860-4d3e-bc54-02166e29f5ef.jpg?v=1656425838&width=1080"
                                     alt=""
                                     class="image-banner"
                                 />
-                            </div>
-                            <div class="content">
-                                <span class="property">Whole grain </span>
-                                <h3 class="product-name">
-                                    <a href="">Bakery</a>
-                                </h3>
-                                <span class="limit">Limited Availability </span>
                             </div>
                         </div>
                         <div class="fruit-banner">
@@ -1054,19 +1150,35 @@
                             <div class="content">
                                 <span class="property">Hand-picked </span>
                                 <h3 class="product-name">
-                                    <a href="">Fruits & Vegetables</a>
+                                    <a href="" class="link-hover">Fruits & Vegetables</a>
                                 </h3>
                                 <span class="limit">Limited Availability </span>
                             </div>
                         </div>
                     </div>
                     <div class="quick-buy">
-                        <div class="image-preview">
-                            <img
-                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/2-a.jpg?v=1653626304&width=1080"
-                                alt=""
-                                class="image-product"
-                            />
+                        <div class="quick-buy__slide">
+                            <div class="image-preview">
+                                <img
+                                    src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/2-a.jpg?v=1653626304&width=1080"
+                                    alt=""
+                                    class="image-product"
+                                />
+                                <img
+                                    src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/2-b.jpg?v=1653626303&width=840"
+                                    alt=""
+                                    class="image-product"
+                                />
+                            </div>
+                            <div class="button-slide__quick-buy">
+                                <button class="button-prev__quick-buy">
+                                    <i class="fi fi-ts-angle-small-left icon-control"></i>
+                                </button>
+                                <div class="dots__quick-buy"></div>
+                                <button class="button-next__quick-buy">
+                                    <i class="fi fi-ts-angle-small-right icon-control"></i>
+                                </button>
+                            </div>
                         </div>
                         <div class="content">
                             <div class="product-info">
@@ -1074,22 +1186,16 @@
                                     <div class="new-price">$4.99</div>
                                     <div class="old-price">$6.00</div>
                                 </div>
-                                <div class="name link-hover">Keto Crunch</div>
+                                <h2 class="name link-hover">Keto Crunch</h2>
                                 <div class="describe">
                                     Keto-friendly combination of pecans, almonds, walnuts, pepitas and no sugar added
                                     dark chocolate. This protein-rich trail mix comes in a 10 oz resealable pouch,
                                     ensuring maximum freshness.
                                 </div>
-                                <p>Select type</p>
+                                <p class="style-select">Style</p>
                                 <div class="select-type">
-                                    <div class="type">
-                                        <input type="radio" name="" id="" value="Smart Mix" />
-                                        <label for="">Smart Mix</label>
-                                    </div>
-                                    <div class="type">
-                                        <input type="radio" name="" id="" value="Student Mix" />
-                                        <label for="">Student Mix</label>
-                                    </div>
+                                    <button class="button-select button-next__quick-buy">Smart Mix</button>
+                                    <button class="button-select button-prev__quick-buy">Student Mix</button>
                                 </div>
                                 <div class="last-price">
                                     <div class="new-price large">$4.99</div>
@@ -1101,9 +1207,9 @@
                             </div>
                             <div class="button-actions">
                                 <div class="quantity-button">
-                                    <button class="decrement">-</button>
+                                    <button class="decrement"><i class="fi-rr-minus icon-button"></i></button>
                                     <span class="quantity">1</span>
-                                    <button class="increment">+</button>
+                                    <button class="increment"><i class="fi-rr-plus icon-button"></i></button>
                                 </div>
                                 <button class="add-button">Add to cart</button>
                                 <button class="buy-button">Buy it now</button>
@@ -1113,6 +1219,13 @@
                 </div>
                 <div class="discount-banner">
                     <div class="banner-promotion">
+                        <div class="background-image">
+                            <img
+                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/rich_text_kitchen_df43f2b8-9b5f-4aee-b7d9-56b5f01fa62e.jpg?v=1655969043&width=1860"
+                                alt=""
+                                class="image-banner"
+                            />
+                        </div>
                         <div class="content">
                             <span class="discount-title">Up to 50% discount</span>
                             <h2 class="title">Kitchen & Dining Summer Sale</h2>
@@ -1121,13 +1234,6 @@
                                 or on a stove...
                             </span>
                             <a href="" class="explore">Learn more</a>
-                        </div>
-                        <div class="background-image">
-                            <img
-                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/rich_text_kitchen_df43f2b8-9b5f-4aee-b7d9-56b5f01fa62e.jpg?v=1655969043&width=1860"
-                                alt=""
-                                class="image-banner"
-                            />
                         </div>
                     </div>
                 </div>
@@ -1153,8 +1259,141 @@
                                     </div>
                                     <div class="name link-hover">Cutting Board</div>
                                 </div>
+                                <div class="label"><span class="label-sale">-17%</span></div>
+                            </div>
+                            <div class="card-product">
+                                <div class="background-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/21-a.jpg?crop=center&height=462&v=1655123214&width=420"
+                                        alt=""
+                                        class="product-image"
+                                    />
+                                </div>
+                                <div class="product-info">
+                                    <div class="price">
+                                        <div class="new-price">$80.00</div>
+                                        <div class="old-price">$145.00</div>
+                                    </div>
+                                    <div class="name link-hover">PTFE Trying Pan</div>
+                                </div>
+                                <div class="label"><span class="label-sale">-45%</span></div>
+                            </div>
+                            <div class="card-product">
+                                <div class="background-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/26-b.jpg?crop=center&height=462&v=1655128179&width=420"
+                                        alt=""
+                                        class="product-image"
+                                    />
+                                </div>
+                                <div class="product-info">
+                                    <div class="price">
+                                        <div class="new-price">$15.00</div>
+                                        <div class="old-price">$30.00</div>
+                                    </div>
+                                    <div class="name link-hover">Salt & Pepper Shakers</div>
+                                </div>
+                                <div class="label"><span class="label-sale">-50%</span></div>
+                            </div>
+                            <div class="card-product">
+                                <div class="background-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/24-a.jpg?crop=center&height=462&v=1655126304&width=420"
+                                        alt=""
+                                        class="product-image"
+                                    />
+                                </div>
+                                <div class="product-info">
+                                    <div class="price">
+                                        <div class="new-price">$69.00</div>
+                                        <div class="old-price">$100.00</div>
+                                    </div>
+                                    <div class="name link-hover">Kitchen Knifes</div>
+                                </div>
+                                <div class="label"><span class="label-sale">-31%</span></div>
+                            </div>
+                            <div class="card-product">
+                                <div class="background-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/22-a.jpg?crop=center&height=462&v=1655123364&width=420"
+                                        alt=""
+                                        class="product-image"
+                                    />
+                                </div>
+                                <div class="product-info">
+                                    <div class="price">
+                                        <div class="new-price">$95.00</div>
+                                        <!-- <div class="old-price">$100.00</div> -->
+                                    </div>
+                                    <div class="name link-hover">Teapot</div>
+                                </div>
+                                <div class="label">
+                                    <span class="label-soldout">SOLD OUT</span>
+                                    <span class="label-preorder">PREORDER NOW</span>
+                                </div>
+                            </div>
+                            <div class="card-product">
+                                <div class="background-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/23-a.jpg?crop=center&height=462&v=1655123850&width=420"
+                                        alt=""
+                                        class="product-image"
+                                    />
+                                </div>
+                                <div class="product-info">
+                                    <div class="price">
+                                        <div class="new-price">On Sale from $20.00</div>
+                                        <!-- <div class="old-price">$100.00</div> -->
+                                    </div>
+                                    <div class="name link-hover">Kitchen Tools</div>
+                                </div>
+                                <div class="label"><span class="label-sale">-25%</span></div>
+                            </div>
+                            <div class="card-product">
+                                <div class="background-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/27-a.jpg?crop=center&height=462&v=1655134826&width=420"
+                                        alt=""
+                                        class="product-image"
+                                    />
+                                </div>
+                                <div class="product-info">
+                                    <div class="price">
+                                        <div class="new-price">$15.00</div>
+                                        <div class="old-price">$25.00</div>
+                                    </div>
+                                    <div class="name link-hover">Wooden Bowls</div>
+                                </div>
+                                <div class="label"><span class="label-sale">-40%</span></div>
+                            </div>
+                            <div class="card-product">
+                                <div class="background-image">
+                                    <img
+                                        src="https://local-theme-light-demo.myshopify.com/cdn/shop/products/24-a.jpg?crop=center&height=462&v=1655126304&width=420"
+                                        alt=""
+                                        class="product-image"
+                                    />
+                                </div>
+                                <div class="product-info">
+                                    <div class="price">
+                                        <div class="new-price">$22.00</div>
+                                        <div class="old-price">$30.00</div>
+                                    </div>
+                                    <div class="name link-hover">Potholder</div>
+                                </div>
+                                <div class="label"><span class="label-sale">-27%</span></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="video-introducing">
+                    <video class="background-video" autoplay muted loop playsinline>
+                        <source src="./introducing.mp4" type="video/mp4" />
+                    </video>
+                    <div class="content-introducing">
+                        <span class="subtitle-introducing">Introducing</span>
+                        <span class="title-introducing">Black Edition</span>
+                        <a class="explore-introducing">Show More</a>
                     </div>
                 </div>
                 <div class="banner-bakery">
@@ -1183,7 +1422,7 @@
                                 />
                             </div>
                             <div class="content">
-                                <a href="" class="name-service">Local Pickup</a>
+                                <a href="" class="name-service link-hover">Local Pickup</a>
                                 <div class="describe">Get orders faster while avoiding shipping fees</div>
                             </div>
                         </div>
@@ -1196,7 +1435,7 @@
                                 />
                             </div>
                             <div class="content">
-                                <a href="" class="name-service">Local Delivery</a>
+                                <a href="" class="name-service link-hover">Local Delivery</a>
                                 <div class="describe">100% curbside recyclable boxes</div>
                             </div>
                         </div>
@@ -1209,7 +1448,7 @@
                                 />
                             </div>
                             <div class="content">
-                                <a href="" class="name-service">For Conscious Eaters</a>
+                                <a href="" class="name-service link-hover">For Conscious Eaters</a>
                                 <div class="describe">We are supporting small farmers and producers</div>
                             </div>
                         </div>
@@ -1222,14 +1461,23 @@
                                 />
                             </div>
                             <div class="content">
-                                <a href="" class="name-service">Delicious & New Food</a>
+                                <a href="" class="name-service link-hover">Delicious & New Food</a>
                                 <div class="describe">Feel great about what you eat</div>
                             </div>
                         </div>
                     </div>
+                    <div class="button-slide__list-services">
+                        <div class="button-prev__list-services">
+                            <i class="fi fi-ts-angle-small-left icon-control"></i>
+                        </div>
+                        <div class="dots__list-services"></div>
+                        <div class="button-next__list-services">
+                            <i class="fi fi-ts-angle-small-right icon-control"></i>
+                        </div>
+                    </div>
                     <div class="articles">
                         <div class="title">
-                            <h2>Latest Articles</h2>
+                            <h2 class="main-title">Latest Articles</h2>
                             <a href="" class="explore">Visit the blog</a>
                         </div>
                         <div class="content">
@@ -1247,7 +1495,7 @@
                                 </div>
                             </div>
                             <div class="old-articles">
-                                <div class="article-1">
+                                <div class="article-item article-1">
                                     <div class="image-container">
                                         <img
                                             src="https://local-theme-light-demo.myshopify.com/cdn/shop/articles/blog2.jpg?crop=center&height=315&v=1654590847&width=420"
@@ -1262,19 +1510,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="article-2">
+                                <div class="article-item article-2">
                                     <div class="image-container">
                                         <img
-                                            src="https://local-theme-light-demo.myshopify.com/cdn/shop/articles/blog2.jpg?crop=center&height=315&v=1654590847&width=420"
+                                            src="https://local-theme-light-demo.myshopify.com/cdn/shop/articles/blog3.jpg?crop=center&height=630&v=1654592092&width=840"
                                             alt=""
                                             class="image-article"
                                         />
                                     </div>
                                     <div class="title-article">
-                                        <div class="time">Jun 07, 2022</div>
-                                        <div class="name link-hover">
-                                            11 Top Chef Grilling Recipes to Make This Summer
-                                        </div>
+                                        <div class="time">Jun 01, 2022</div>
+                                        <div class="name link-hover">Healthy Sweets?</div>
                                     </div>
                                 </div>
                             </div>
@@ -1284,70 +1530,157 @@
                         <h2 class="title">Upcoming events</h2>
                         <div class="list-events">
                             <div class="event">
-                                <div class="button-toggle">+</div>
-                                <div class="info">
-                                    <div class="name link-hover">WINE TASTING</div>
-                                    <div class="address">
-                                        <div class="icon">
-                                            <i class="fi fi-rs-map-marker"></i>
+                                <div class="event-actions">
+                                    <button class="button-toggle btn-1"><i class="fi-ss-plus icon-plus"></i></button>
+                                    <div class="info">
+                                        <div class="name link-hover">WINE TASTING</div>
+                                        <div class="address">
+                                            <div class="icon">
+                                                <i class="fi fi-rs-map-marker"></i>
+                                            </div>
+                                            <div class="detail">Saint Germain. Thu Sep 24th 6.00pm - 8.00pm</div>
                                         </div>
-                                        <div class="detail">Saint Germain. Thu Sep 24th 6.00pm - 8.00pm</div>
                                     </div>
+                                    <button class="register">Register</button>
                                 </div>
-                                <button class="register">Register</button>
+                                <div class="content-toggle content-1">
+                                    <p>
+                                        Spend a decadent afternoon in our Saint Germain store with a wine and cheese
+                                        tasting, guided by a knowledgeable sommelier.
+                                    </p>
+                                    <p>
+                                        Sample wines from various regions, including Rhone, Bordeaux and Sancerre,
+                                        learning how each region produces different wines.
+                                    </p>
+                                    <p>
+                                        - Find out the proper way to taste wine.
+                                        <br />
+                                        - Nibble on wine-friendly snacks like French cheeses and cured meats for lunch
+                                        while you sip in a comfortable converted wine cellar in the center of Paris.
+                                        <br />
+                                        - Taste five different wines from regions such as Bordeaux, Sancerre and
+                                        Champagne Sample artisanal cheese and tasty charcuterie
+                                        <br />
+                                        - Learn about the best wine-tasting techniques from your trained sommelier guide
+                                        Relax
+                                        <br />
+                                    </p>
+                                </div>
                             </div>
                             <div class="event">
-                                <div class="button-toggle">+</div>
-                                <div class="info">
-                                    <div class="name link-hover">Free cooking class</div>
-                                    <div class="address">
-                                        <div class="icon">
-                                            <i class="fi fi-rs-map-marker"></i>
+                                <div class="event-actions">
+                                    <button class="button-toggle btn-2"><i class="fi-ss-plus icon-plus"></i></button>
+                                    <div class="info">
+                                        <div class="name link-hover">Free cooking class</div>
+                                        <div class="address">
+                                            <div class="icon">
+                                                <i class="fi fi-rs-map-marker"></i>
+                                            </div>
+                                            <div class="detail">Champs Élysées. Wed Oct 11th 5.00pm - 8.00pm</div>
                                         </div>
-                                        <div class="detail">Champs Élysées. Wed Oct 11th 5.00pm - 8.00pm</div>
                                     </div>
+                                    <button class="register">Register</button>
                                 </div>
-                                <button class="register">Register</button>
+                                <div class="content-toggle content-2">
+                                    <p>
+                                        In our third MasterClass, Chef John Doe focuses on preparing fresh seafood like
+                                        lobster and salmon, making classic desserts such as apple pie and lemon tart,
+                                        and showing how sous vide cooking can be done at home to enhance flavor and
+                                        texture.
+                                    </p>
+                                    <p>
+                                        Whether you’re a beginning or advanced cook, you’ll learn the techniques and
+                                        principles that will give you the understanding and skills to get the most
+                                        delicious results.
+                                    </p>
+                                </div>
                             </div>
                             <div class="event">
-                                <div class="button-toggle">+</div>
-                                <div class="info">
-                                    <div class="name link-hover">Pumpkin carving contest</div>
-                                    <div class="address">
-                                        <div class="icon">
-                                            <i class="fi fi-rs-map-marker"></i>
+                                <div class="event-actions">
+                                    <button class="button-toggle btn-3"><i class="fi-ss-plus icon-plus"></i></button>
+                                    <div class="info">
+                                        <div class="name link-hover">Pumpkin carving contest</div>
+                                        <div class="address">
+                                            <div class="icon">
+                                                <i class="fi fi-rs-map-marker"></i>
+                                            </div>
+                                            <div class="detail">La Défense. Fri Oct 18th 5.00pm - 8.00pm</div>
                                         </div>
-                                        <div class="detail">La Défense. Fri Oct 18th 5.00pm - 8.00pm</div>
                                     </div>
+                                    <button class="register">Register</button>
                                 </div>
-                                <button class="register">Register</button>
+                                <div class="content-toggle content-3">
+                                    <p>This year’s contest will be conducted as follows:</p>
+                                    <p>
+                                        Pumpkins will be <span class="text-underline">carved</span> at home and brought
+                                        to school on <strong>Wednesday, October 30th, </strong
+                                        ><span class="text-underline">no</span><strong> later than 9:00am</strong>.
+                                        Pumpkins will be displayed in the front hall, and the judging will take place on
+                                        Wednesday, October 30th at 3:00pm. They will be lit and displayed on the stage
+                                        for the school to view on Thursday at 1:00pm.
+                                    </p>
+                                    <p>
+                                        A <span class="text-underline">battery operated candle </span>must be provided
+                                        by the student in order for the pumpkin to be lit.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="review">
                         <div class="title">
-                            <h2>Testimonials</h2>
-                            <span>What our clients say </span>
+                            <h2 class="main-title">Testimonials</h2>
+                            <span class="sub-title">What our clients say </span>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-1">
-                                <div class="info">
-                                    <div class="info-image">
-                                        <img
-                                            src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/fresh_food_5ed4c2ea-d46c-4d9d-9e25-6cd9a62119d5.jpg?crop=center&height=70&v=1655966780&width=70"
-                                            alt=""
-                                            class="avt"
-                                        />
+                        <div class="review-container">
+                            <div class="list-review">
+                                <div class="review-slide">
+                                    <div class="info">
+                                        <div class="info-image">
+                                            <img
+                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/fresh_food_5ed4c2ea-d46c-4d9d-9e25-6cd9a62119d5.jpg?crop=center&height=70&v=1655966780&width=70"
+                                                alt=""
+                                                class="avt"
+                                            />
+                                        </div>
+                                        <div class="info-detail">
+                                            <p>Michael Smith</p>
+                                            <p>Customer</p>
+                                        </div>
                                     </div>
-                                    <div class="info-detail">
-                                        <p>Michael Smith</p>
-                                        <p>Customer</p>
-                                    </div>
+                                    <p class="review-text">
+                                        Great products. Always fresh, eco stuff that i can't find anywhere else in the
+                                        city. I wouldn't imagine my daily life without them!
+                                    </p>
                                 </div>
-                                <p class="review-text">
-                                    Great products. Always fresh, eco stuff that i can't find anywhere else in the city.
-                                    I wouldn't imagine my daily life without them!
-                                </p>
+                                <div class="review-slide">
+                                    <div class="info">
+                                        <div class="info-image">
+                                            <img
+                                                src="https://local-theme-light-demo.myshopify.com/cdn/shop/files/preparing-food-with-gloves.jpg?crop=center&height=70&v=1653641705&width=70"
+                                                alt=""
+                                                class="avt"
+                                            />
+                                        </div>
+                                        <div class="info-detail">
+                                            <p>John Forest</p>
+                                            <p>Customer</p>
+                                        </div>
+                                    </div>
+                                    <p class="review-text">
+                                        What i love about this shop is the fact that they have great assistance after
+                                        buying. They offer free recipes and a lot of freebies on each purchase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button-slide__review">
+                                <button class="button-prev__review">
+                                    <i class="fi fi-ts-angle-small-left icon-control"></i>
+                                </button>
+                                <div class="dots__review"></div>
+                                <button class="button-next__review">
+                                    <i class="fi fi-ts-angle-small-right icon-control"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1366,52 +1699,70 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-running">
+                    <span
+                        >We've opened a new store in <strong>La Defense</strong>.
+                        <a href="" class="text-underline">Check it out</a>!</span
+                    >
+                    <span><span class="text-underline text-italic">FREE SHIPPING</span> on orders above $50.</span>
+                    <span
+                        >Check out or all new <a href=""><strong>RECIPES SECTION</strong></a></span
+                    >
+                </div>
             </section>
         </div>
         <footer>
-            <div class="footer-links">
-                <div class="introduce">
-                    <h4 class="title">LOCAL</h4>
-                    <p class="subtitle">
-                        Fresh products from local producers, delivered directly to your front door, daily.
-                    </p>
-                    <div class="social-icons">
-                        <i class="fi fi-sr-envelope"></i>
-
-                        <i class="fi fi-brands-facebook"></i>
-
-                        <i class="fi fi-brands-twitter"></i>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-links">
+                        <div class="introduce">
+                            <h4 class="title">LOCAL</h4>
+                            <p class="subtitle">
+                                Fresh products from local producers, delivered directly to your front door, daily.
+                            </p>
+                            <div class="social-icons">
+                                <i class="fi fi-sr-envelope icon-social"></i>
+                                <i class="fi fi-brands-facebook icon-social"></i>
+                                <i class="fi fi-brands-twitter icon-social"></i>
+                            </div>
+                        </div>
+                        <div class="categories-links">
+                            <h4 class="title">Popular categories</h4>
+                            <span><a href="">Breads & Bakery</a></span>
+                            <span><a href="">Dairy & Eggs</a></span>
+                            <span><a href="">Fresh Meals & Pizzas</a></span>
+                            <span><a href="">Fruits & Vegetables</a></span>
+                            <span><a href="">Kitchen Appliances</a></span>
+                        </div>
+                        <div class="store">
+                            <span class="store-container">
+                                <h4 class="title">Main Store</h4>
+                                <div class="address">13 Champs-Élysées 75008 Paris France</div>
+                            </span>
+                        </div>
+                        <div class="quick-links">
+                            <h4 class="title">Quick links</h4>
+                            <span><a href="">Search</a></span>
+                            <span><a href="">About Us</a></span>
+                            <span><a href="">Delivery</a></span>
+                            <span><a href="">Our stores</a></span>
+                        </div>
                     </div>
                 </div>
-                <div class="categories-links">
-                    <h4 class="title">Popular categories</h4>
-                    <a href="">Breads & Bakery</a>
-                    <a href="">Dairy & Eggs</a>
-                    <a href="">Fresh Meals & Pizzas</a>
-                    <a href="">Fruits & Vegetables</a>
-                    <a href="">Kitchen Appliances</a>
+                <div class="footer-copyright">
+                    <div class="container footer-container">
+                        <span
+                            >Copyright © 2023 <span class="line-bottom">Local Theme Light Demo</span>.
+                            <span class="line-bottom">Powered by Shopify</span>
+                        </span>
+                        <select name="" id="">
+                            <option value="0">English</option>
+                            <option value="1">Tiếng Việt</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="store">
-                    <h4 class="title">Main Store</h4>
-                    <div class="address">13 Champs-Élysées 75008 Paris France</div>
-                </div>
-                <div class="quick-links">
-                    <h4 class="title">Quick links</h4>
-                    <a href="">Search</a>
-                    <a href="">About Us</a>
-                    <a href="">Delivery</a>
-                    <a href="">Our stores</a>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <span>Copyright © 2023 Local Theme Light Demo.Powered by Shopify </span>
-                <select name="" id="">
-                    <option value="0">English</option>
-                    <option value="1">Tiếng Việt</option>
-                </select>
             </div>
         </footer>
-        <script src="./js/main.js"></script>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
@@ -1426,19 +1777,17 @@
         crossorigin="anonymous"
     ></script>
     <script>
-        // $(document).ready(function () {
-        $('.discount-slider').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrrows: true,
-            prevArrow: '<button class="slick-prev__discount-slider"><i class="fi fi-rr-angle-left"></i></button>',
-            nextArrow: ' <button class="slick-next__discount-slider"><i class="fi fi-rr-angle-right"></i></button>',
-        });
-        // });
         $(document).ready(function () {
+            $('.discount-slider').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrrows: true,
+                prevArrow: '<button class="slick-prev__discount-slider"><i class="fi fi-rr-angle-left"></i></button>',
+                nextArrow: ' <button class="slick-next__discount-slider"><i class="fi fi-rr-angle-right"></i></button>',
+            });
             $('.slider').slick({
-                infinite: true,
+                infinite: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: false,
@@ -1446,130 +1795,233 @@
                 autoplaySpeed: 2000,
                 dots: true,
                 appendDots: $('.dots__slider'),
-                arrows: true,
                 prevArrow: $('.slick-prev__slider'),
                 nextArrow: $('.slick-next__slider'),
             });
-
-            // $('.slick-prev__slider').click(function (e) {
-            //     $('.slider').slick('slickPrev');
-            // });
-            // $('.slick-next__slider').click(function (e) {
-            //     $('.slider').slick('slickNext');
-            // });
-        });
-        $(document).ready(function () {
             $('.list-card').slick({
-                infinite: true,
+                infinite: false,
                 slidesToShow: 4,
                 slidesToScroll: 4,
                 dots: true,
-                // appendDots: $('.dots'),
+                appendDots: $('.dots__list-card'),
                 prevArrow: $('.button-prev__list-card'),
                 nextArrow: $('.button-next__list-card'),
-                // prevArrow: '<button class="prev"><i class="fi fi-rr-angle-left"></i></button>',
-                // nextArrow: '<button class="next"><i class="fi fi-rr-angle-right"></i></button>',
-                // responsive: [
-                //     {
-                //         breakpoint: 1024,
-                //         settings: {
-                //             slidesToShow: 3,
-                //             slidesToScroll: 3,
-                //             infinite: true,
-                //         },
-                //     },
-                //     {
-                //         breakpoint: 768,
-                //         settings: {
-                //             slidesToShow: 2,
-                //             slidesToScroll: 2,
-                //             infinite: true,
-                //         },
-                //     },
-                //     {
-                //         breakpoint: 576,
-                //         settings: {
-                //             slidesToShow: 2,
-                //             slidesToScroll: 2,
-                //         },
-                //     },
-                // ],
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2,
+                            infinite: false,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: false,
+                        },
+                    },
+                ],
             });
-
-            // $('.button-prev__list-card').click(function (e) {
-            //     $('.list-card').slick('slickPrev');
-            // });
-            // $('.button-next__list-card').click(function (e) {
-            //     $('.list-card').slick('slickNext');
-            // });
-        });
-        $(document).ready(function () {
-            function initializeSlider() {
-                $('.card-slide').slick({
-                    // dots: true,
-                    arrows: true,
-                    infinite: true,
-                    speed: 500,
-                    slidesToShow: 1, // Hiển thị 3 slide cùng lúc trên màn hình rộng
-                    slidesToScroll: 1,
-                    prevArrow: $('.button-prev__card-slide'),
-                    nextArrow: $('.button-next__card-slide'),
-                    responsive: [
-                        {
-                            breakpoint: 1024, // Kích thước màn hình dưới 1024px
-                            settings: {
-                                slidesToShow: 2, // Hiển thị 2 slide cùng lúc trên màn hình có kích thước dưới 1024px
-                            },
+            $('.card-slide').slick({
+                dots: true,
+                arrows: true,
+                infinite: false,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                appendDots: $('.dots__card-slide'),
+                prevArrow: $('.button-prev__card-slide'),
+                nextArrow: $('.button-next__card-slide'),
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
                         },
-                        {
-                            breakpoint: 768, // Kích thước màn hình dưới 768px
-                            settings: {
-                                slidesToShow: 1, // Hiển thị 1 slide cùng lúc trên màn hình có kích thước dưới 768px
-                            },
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
                         },
-                    ],
+                    },
+                ],
+            });
+            $('.categories-slider').slick({
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                // mobileFirst: true,
+                infinite: false,
+                dots: true,
+                appendDots: $('.dots__categories-slider'),
+                prevArrow: $('.button-prev__categories-slider'),
+                nextArrow: $('.button-next__categories-slider'),
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
+                ],
+            });
+            $('.lifestyle-slider').slick({
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                dots: true,
+                appendDots: $('.dots__lifestyle-slider'),
+                prevArrow: $('.button-prev__lifestyle-slider'),
+                nextArrow: $('.button-next__lifestyle-slider'),
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
+                    // {
+                    //     breakpoint: 576,
+                    //     slidesToShow: 2,
+                    //     slidesToScroll: 2,
+                    // },
+                ],
+            });
+            $('.image-preview').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true,
+                appendDots: $('.dots__quick-buy'),
+                prevArrow: $('.button-prev__quick-buy'),
+                nextArrow: $('.button-next__quick-buy'),
+            });
+            $('.list-services').slick({
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: false,
+                dots: true,
+                appendDots: $('.dots__list-services'),
+                prevArrow: $('.button-prev__list-services'),
+                nextArrow: $('.button-next__list-services'),
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
+                ],
+            });
+            $('.list-review').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true,
+                appendDots: $('.dots__review'),
+                prevArrow: $('.button-prev__review'),
+                nextArrow: $('.button-next__review'),
+            });
+            $('.text-running').slick({
+                speed: 2000,
+                autoplay: true,
+                autoplaySpeed: 0,
+                centerMode: true,
+                cssEase: 'linear',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true,
+                infinite: true,
+                initialSlide: 1,
+                arrows: false,
+                buttons: false,
+            });
+            $('.btn-1 .fi-ss-plus').on('click', function () {
+                $(this).toggleClass('fi-ss-plus fi-ss-minus');
+            });
+            $('.btn-2 .fi-ss-plus').on('click', function () {
+                $(this).toggleClass('fi-ss-plus fi-ss-minus');
+            });
+            $('.btn-3 .fi-ss-plus').on('click', function () {
+                $(this).toggleClass('fi-ss-plus fi-ss-minus');
+            });
+            $('.content-1').hide();
+            $('.content-2').hide();
+            $('.content-3').hide();
+            $('.btn-1').click(function () {
+                $('.content-1').toggle(function () {
+                    $('.content-1').animate({
+                        height: 'fit-content',
+                        width: '100%',
+                    });
                 });
-            }
-
-            // Gọi hàm khởi tạo slider ban đầu
-            initializeSlider();
-
-            // Xử lý khi cửa sổ trình duyệt thay đổi kích thước (responsive)
-            $(window).on('resize', function () {
-                // Xóa slick slider hiện tại
-                $('.slider-container').slick('unslick');
-                // Gọi lại hàm khởi tạo slider để cập nhật các cài đặt responsive mới
-                initializeSlider();
+                $('.content-toggle').addClass('show-content');
+            });
+            $('.btn-2').click(function () {
+                $('.content-2').toggle(function () {
+                    $('.content-2').animate({
+                        height: 'fit-content',
+                        width: '100%',
+                    });
+                });
+                $('.content-toggle').addClass('show-content');
+            });
+            $('.btn-3').click(function () {
+                $('.content-3').toggle(function () {
+                    $('.content-3').animate({
+                        height: 'fit-content',
+                        width: '100%',
+                    });
+                });
+                // $('.content-toggle').addClass('show-content');
             });
         });
-        // $(document).ready(function () {
-        //     $('.card-slide').slick({
-        //         infinite: true,
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1,
-        //         // dots: true,
-        //         // arrows: false,
-        //         prevArrow: $('.button-prev__card-slide'),
-        //         nextArrow: $('.button-next__card-slide'),
-        //         responsive: [
-        //             // {
-        //             //     breakpoint: 1024,
-        //             //     settings: {
-        //             //         slidesToShow: 2,
-        //             //         slidesToScroll: 2,
-        //             //         infinite: true,
-        //             //     },
-        //             // },
-        //             {
-        //                 breakpoint: 768,
-        //                 settings: {
-        //                     slidesToShow: 1,
-        //                     slidesToScroll: 1,
-        //                     infinite: true,
-        //                 },
-        //             },
-        //         ],
-        //     });
-        // });
+    </script>
+    <script>
+        const quantity = document.querySelector('.quantity');
+        const decrementButton = document.querySelector('.decrement');
+        const incrementButton = document.querySelector('.increment');
+        function incrementQuantity() {
+            let quantity_new = parseInt(quantity.textContent);
+            quantity_new++;
+            quantity.textContent = quantity_new;
+        }
+        function decrementQuantity() {
+            let quantity_new = parseInt(quantity.textContent);
+            if (quantity_new > 1) {
+                quantity_new--;
+                quantity.textContent = quantity_new;
+            }
+        }
+        decrementButton.addEventListener('click', decrementQuantity);
+        incrementButton.addEventListener('click', incrementQuantity);
     </script>
 </html>
