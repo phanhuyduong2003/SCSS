@@ -274,7 +274,7 @@
                     display: block;
                     min-height: 50px;
                     position: relative;
-                    width: 70%;
+                    width: 60%;
                     .search-icon {
                         font-size: 22px;
                         position: absolute;
@@ -995,6 +995,7 @@
                         flex-direction: column;
                         justify-content: space-between;
                         align-items: center;
+                        min-height: 380px;
                         // width: calc(100% - 30px) !important;
                         // width: 80% !important;
                         // @media screen and (max-width: 900px) {

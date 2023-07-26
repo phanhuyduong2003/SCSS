@@ -412,7 +412,7 @@ scroll */
     display: block;
     min-height: 50px;
     position: relative;
-    width: 70%;
+    width: 60%;
   }
   .header-main .header .header-actions .search .search-icon {
     font-size: 22px;
@@ -1064,6 +1064,7 @@ scroll */
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-height: 380px;
   background-color: white;
   border-radius: 12px;
   padding: 5px;
