@@ -22,76 +22,82 @@ a {
     color: black;
 }
 .link-hover {
-    // display: inline;
-    // position: relative;
-    // text-decoration: none;
-    // color: black;
-    // word-wrap: break-word;
-    // word-break: keep-all;
+    display: -webkit-inline-box;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    word-wrap: break-word;
+    word-break: keep-all;
     // width: calc(100%);
-    background-image: linear-gradient(to right, black, black);
-    background-position: left calc(1em + 2px);
-    background-repeat: no-repeat;
-    display: inline;
-    padding-bottom: 3px;
-    transition: all 100ms linear;
-    background-size: 0% 2px;
-    &:hover {
-        background-image: linear-gradient(to right, black, black);
-        background-position: left calc(1em + 2px);
-        background-size: 100% 2px;
-        background-repeat: no-repeat;
-        display: inline;
-        padding-bottom: 3px;
-        transition: all 100ms linear;
-    }
+    // background-image: linear-gradient(to right, black, black);
+    // background-position: left calc(1em + 2px);
+    // background-repeat: no-repeat;
+    // display: inline;
+    // padding-bottom: 3px;
+    // transition: all 100ms linear;
+    // background-size: 0% 1px;
+    // // @include truncate_text(1);
+    // &:hover {
+    //     background-image: linear-gradient(to right, black, black);
+    //     background-position: left calc(1em + 2px);
+    //     background-size: 100% 1px;
+    //     background-repeat: no-repeat;
+    //     // @include truncate_text(1);
+    //     display: inline;
+    //     padding-bottom: 3px;
+    //     transition: all 100ms linear;
+    // }
 }
-// .link-hover::after {
-//     content: '';
-//     position: absolute;
-//     width: calc(100%);
-//     transform: scale(0);
-//     height: 1px;
-//     bottom: 0;
-//     left: 0;
-//     background-color: black;
-//     transform-origin: bottom left;
-//     transition: transform 0.25s ease-out;
-// }
-// .link-hover:hover::after {
-//     transform: scaleX(1);
-//     transform-origin: bottom left;
-// }
+.link-hover::after {
+    content: '';
+    position: absolute;
+    width: calc(100%);
+    transform: scale(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+.link-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 .container {
-    margin: 0 auto;
-    & > * {
-        margin-top: 100px;
+    margin: 100px auto 0;
+    padding: 0 15px;
+    @include mq_min_576 {
+        padding: 0 20px;
     }
+    // & > * {
+    //     margin-top: 100px;
+    // }
 
     @include mq_min_200 {
-        max-width: 340px;
+        max-width: 480px;
     }
     // @include mq_min_480 {
     //     max-width: 460px;
     // }
     @include mq_min_576 {
-        max-width: 540px;
+        max-width: 760px;
     }
     @include mq_min_768 {
-        max-width: 720px;
+        max-width: 980px;
     }
     @include mq_min_1024 {
-        max-width: 960px;
+        max-width: 1010px;
     }
     @include mq_min_1200 {
-        max-width: 1170px;
+        max-width: 1360px;
     }
 }
 .card-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    // padding: 10px;
     overflow: hidden;
     img {
         width: 100%;
@@ -112,11 +118,24 @@ a {
 }
 .price {
     font-size: 17px;
+    @include truncate_text(1);
+    // white-space: nowrap;
 }
 .name {
     font-weight: 500;
-    font-size: 21px;
-    word-wrap: break-word;
+    font-size: 17px;
+    @include mq_min_576 {
+        font-size: 21px;
+    }
+    @include truncate_text(1);
+    // overflow: hidden;
+    // word-wrap: break-word;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // @include truncate_text(2);
+    // @include mq_min_576 {
+    //     @include truncate_text(1);
+    // }
     // word-break: break-all;
     cursor: pointer;
 }
@@ -126,7 +145,7 @@ a {
     width: 100%;
     color: black;
     border: 1px solid black;
-    padding: 8px 24px;
+    padding: 8px 20px;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.4s linear;
