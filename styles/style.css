@@ -32,6 +32,7 @@ a {
 }
 
 .link-hover {
+  width: fit-content;
   display: -webkit-inline-box;
   position: relative;
   text-decoration: none;
@@ -221,7 +222,7 @@ h2.title {
   .info-bar .social-icon {
     display: flex;
     justify-content: space-between;
-    width: 12%;
+    width: 100px;
     font-size: 20px;
   }
   .info-bar .social-icon a {
@@ -451,10 +452,15 @@ scroll */
 }
 @media screen and (min-width: 1024px) {
   .header-main .header .header-actions .search {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-main .header .header-actions .search {
     display: block;
     min-height: 50px;
     position: relative;
-    width: 60%;
+    width: 70%;
   }
   .header-main .header .header-actions .search .search-icon {
     font-size: 22px;
@@ -947,10 +953,7 @@ scroll */
   align-items: normal;
   flex-wrap: nowrap;
 }
-.content .best-seller .card-info .list-card .slick-list {
-  margin: 0 -10px;
-}
-.content .best-seller .card-info .list-card .slick-list .slick-slide {
+.content .best-seller .card-info .list-card .slick-slide {
   margin: 0 10px;
 }
 .content .best-seller .card-info .list-card .card-item {
@@ -1000,6 +1003,10 @@ scroll */
 .content .best-seller .card-info .list-card .card-item .card-content .name {
   font-size: 17px;
   white-space: unset;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media screen and (min-width: 576px) {
   .content .best-seller .card-info .list-card .card-item .card-content .name {
@@ -1038,6 +1045,18 @@ scroll */
 .content .best-seller .card-info .list-card .card-item .card-content .note {
   font-size: 17px;
   opacity: 0.54;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .content .best-seller .card-info .list-card .card-item .card-content .note {
+    display: -webkit-box;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 .content .best-seller .card-info .list-card .card-item .card-content .list-icon {
   display: flex;

@@ -41,7 +41,7 @@
         .social-icon {
             display: flex;
             justify-content: space-between;
-            width: 12%;
+            width: 100px;
             font-size: 20px;
             // color: white;
             a {
@@ -293,10 +293,13 @@
                     align-items: center;
                 }
                 @include mq_min_1024 {
+                    width: 55%;
+                }
+                @include mq_min_1200 {
                     display: block;
                     min-height: 50px;
                     position: relative;
-                    width: 60%;
+                    width: 70%;
                     .search-icon {
                         font-size: 22px;
                         position: absolute;
@@ -830,12 +833,12 @@
             margin-top: 40px;
             .list-card {
                 @include flexbox(flex, flex-start, normal, nowrap);
-                .slick-list {
-                    margin: 0 -10px;
-                    .slick-slide {
-                        margin: 0 10px;
-                    }
+                // .slick-list {
+                //     margin: 0 -10px;
+                .slick-slide {
+                    margin: 0 10px;
                 }
+                // }
                 .card-item {
                     position: relative;
                     min-height: 545px;
@@ -886,6 +889,9 @@
                             @include mq_min_576 {
                                 font-size: 21px;
                             }
+                            // .link-hover {
+                            @include truncate_text(1);
+                            // }
                         }
                         .rating {
                             display: flex;
@@ -916,6 +922,10 @@
                             // min-height: 51px;
                             font-size: 17px;
                             opacity: 0.54;
+                            @include truncate_text(1);
+                            @include mq_min_768 {
+                                @include truncate_text(unset);
+                            }
                         }
                         .list-icon {
                             display: flex;

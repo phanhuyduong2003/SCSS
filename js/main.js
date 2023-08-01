@@ -1,11 +1,17 @@
 var RUN = {
-    openNav: () => {
-        document.getElementById('sidebar').style.width = '375px';
-        document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+    handleOpenNav: () => {
+        function openNav() {
+            document.getElementById('sidebar').style.width = '375px';
+            document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+        }
+        $('.menu-toggle').on('click', openNav);
     },
-    closeNav: () => {
-        document.getElementById('sidebar').style.width = '0';
-        document.body.style.backgroundColor = 'white';
+    handleCloseNav: () => {
+        function closeNav() {
+            document.getElementById('sidebar').style.width = '0';
+            document.body.style.backgroundColor = 'white';
+        }
+        $('.closebtn').on('click', closeNav);
     },
     scrollDiscount: () => {
         $('.discount-slider').slick({
@@ -234,8 +240,8 @@ var RUN = {
     },
 
     init: () => {
-        RUN.openNav();
-        RUN.closeNav();
+        RUN.handleOpenNav();
+        RUN.handleCloseNav();
         RUN.scrollDiscount();
         RUN.scrollBanner();
         RUN.scrollBestSeller();
