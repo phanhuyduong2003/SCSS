@@ -1147,8 +1147,9 @@ scroll */
 }
 @media screen and (min-width: 576px) {
   .content .fresh-food .content__fresh-food .fresh-food__slide {
+    padding: 0 13px;
+    margin-bottom: 20px;
     width: 50%;
-    padding: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1164,17 +1165,17 @@ scroll */
     padding: 25px 15px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .content .fresh-food .content__fresh-food .fresh-food__slide {
-    width: 50%;
-  }
-}
 .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide {
   margin-top: 0;
   text-align: center;
 }
 .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide .slick-slide {
   margin: 0 10px;
+}
+@media screen and (min-width: 1024px) {
+  .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide .slick-slide {
+    margin: 0 15px;
+  }
 }
 .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide img {
   width: 100px;
@@ -1191,11 +1192,6 @@ scroll */
   background-color: white;
   border-radius: 12px;
   cursor: grab;
-}
-@media screen and (min-width: 1200px) {
-  .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide .card-food {
-    width: 80% !important;
-  }
 }
 .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide .card-food .card-image {
   padding: 0;
@@ -2546,9 +2542,9 @@ scroll */
 .content .events .list-events .event .content-toggle {
   padding: 25px 48px;
   border-top: 1px solid rgba(29, 29, 29, 0.1490196078);
-  font-family: "DM Sans", sans-serif;
 }
 .content .events .list-events .event .content-toggle > * {
+  font-family: "DM Sans", sans-serif;
   font-size: 17px;
   margin-bottom: 16px;
 }
@@ -2725,26 +2721,10 @@ scroll */
   }
 }
 .content .text-running {
-  font-size: 25px;
-  margin: 100px auto;
-}
-.content .text-running .slick-list {
-  margin: 0 -20px;
-}
-.content .text-running .slick-list .slick-slide {
-  margin: 0 20px;
-}
-.content .text-running .text-underline {
-  text-decoration: underline;
-}
-.content .text-running .text-italic {
-  font-style: italic;
-}
-.content .text-running {
   display: flex;
   position: relative;
   height: 50px;
-  margin: auto;
+  margin: 60px 0;
   overflow: hidden;
   z-index: 1;
 }
@@ -2940,15 +2920,20 @@ scroll */
 }
 .footer .footer-copyright .footer-container select {
   border: none;
+  outline: none;
+  margin-top: 10px;
+  background: none;
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
-  margin-top: 10px;
   cursor: pointer;
 }
 @media screen and (min-width: 576px) {
   .footer .footer-copyright .footer-container select {
     margin-top: 0;
   }
+}
+.footer .footer-copyright .footer-container select > * {
+  font-family: "DM Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
