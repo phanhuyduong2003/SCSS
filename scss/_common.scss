@@ -1013,6 +1013,9 @@
                 @include mq_min_768 {
                     width: 40%;
                 }
+                @include mq_min_1024 {
+                    width: 50%;
+                }
                 margin-top: 0;
                 // height: 100%;
                 .background-image {
@@ -1051,13 +1054,15 @@
                     // top: 50%;
                     // right: 0;
                     // transform: translate(0, -50%);
+                    // width: 50%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     padding: 25px 15px;
                 }
-                // @include mq_min_1200 {
-                //     width: 50%;
+                @include mq_min_1200 {
+                    width: 50%;
+                }
                 //     position: absolute;
                 //     top: 50%;
                 //     right: 0;

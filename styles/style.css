@@ -1133,6 +1133,11 @@ scroll */
     width: 40%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .content .fresh-food .content__fresh-food .background {
+    width: 50%;
+  }
+}
 .content .fresh-food .content__fresh-food .background .background-image {
   width: 100%;
   height: 100%;
@@ -1163,6 +1168,11 @@ scroll */
     flex-direction: column;
     justify-content: center;
     padding: 25px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content .fresh-food .content__fresh-food .fresh-food__slide {
+    width: 50%;
   }
 }
 .content .fresh-food .content__fresh-food .fresh-food__slide .card-slide {
