@@ -1,26 +1,41 @@
 var RUN = {
     handleOpenNav: () => {
         function openNav() {
-            document.getElementById('sidebar').style.width = '375px';
+            document.getElementById('sidebar').style.transform = 'translateX(0)';
+            // document.getElementById('sidebar').style.width = '375px';
             document.querySelector('body').classList.add('menu-open');
+            // document.querySelector('.header').style.backgroundColor = 'transparent';
         }
         $('.menu-toggle').on('click', openNav);
     },
     handleCloseNav: () => {
         function closeNav() {
-            document.getElementById('sidebar').style.width = '0';
+            document.getElementById('sidebar').style.transform = 'translateX(-375px)';
             document.querySelector('body').classList.remove('menu-open');
+            // document.querySelector('.header').style.backgroundColor = 'white';
         }
         $('.closebtn').on('click', closeNav);
 
         function handleMousePos(event) {
             var mouseClickWidth = event.clientX;
             if (mouseClickWidth >= 375) {
-                document.getElementById('sidebar').style.width = '0';
+                document.getElementById('sidebar').style.transform = 'translateX(-375px)';
                 document.querySelector('body').classList.remove('menu-open');
+                // document.querySelector('.header').style.backgroundColor = 'white';
             }
         }
         document.addEventListener('click', handleMousePos);
+    },
+    handleScrollMenuBar: () => {
+        window.onscroll = function menuScroll() {
+            if (window.scrollY > 1) {
+                document.querySelector('.info-bar').style.opacity = '0';
+                document.querySelector('.header').style.top = '0';
+            } else {
+                document.querySelector('.info-bar').style.opacity = '1';
+                document.querySelector('.header').style.removeProperty('top');
+            }
+        };
     },
     scrollDiscount: () => {
         $('.discount-slider').slick({
@@ -251,6 +266,7 @@ var RUN = {
     init: () => {
         RUN.handleOpenNav();
         RUN.handleCloseNav();
+        RUN.handleScrollMenuBar();
         RUN.scrollDiscount();
         RUN.scrollBanner();
         RUN.scrollBestSeller();
